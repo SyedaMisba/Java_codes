@@ -1,0 +1,30 @@
+class Programming {
+	public static void main(String[] args) 
+	{
+		String str = "Str String 1235L";
+		int upper=0, lower=0, space=0, digit=0;
+		for (int i=0; i<str.length() ; i++ )
+		{
+			if (str.charAt(i) >= 'A' && str.charAt(i)<= 'Z')
+			{
+				upper++;
+			}
+			else if (str.charAt(i) >= 'a' && str.charAt(i)<= 'z')
+			{
+				lower++;
+			}
+			else if (str.charAt(i)==' ')
+			{
+				space++;
+			}
+			else if (str.charAt(i) >= '0' && str.charAt(i)<= '9')
+			{
+				digit++;
+			}
+		}
+		System.out.println(upper);
+		System.out.println(lower);
+		System.out.println(space);
+		System.out.println(digit);
+	}
+}
